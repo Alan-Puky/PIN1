@@ -6,7 +6,7 @@ pipeline {
   }
 
   environment {
-    ARTIFACT_ID = "lab-01/webapp:${env.BUILD_NUMBER}"
+    ARTIFACT_ID = "elbuo8/webapp:${env.BUILD_NUMBER}"
   }
    stages {
    stage('Building image') {
