@@ -24,8 +24,7 @@ pipeline {
    stage('Deploy Image') {
       steps{
         sh '''
-        docker tag testapp 1mas
-        docker push 1mas
+        
         '''
         }
       }
