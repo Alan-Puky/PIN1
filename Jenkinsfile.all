@@ -20,7 +20,7 @@ pipeline {
   
     stage('Run tests') {
       steps {
-        sh "docker run testapp"
+        sh "docker run testapp npm test 100"
       }
     }
    stage('Deploy Image') {
