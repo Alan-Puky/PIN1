@@ -20,7 +20,7 @@ pipeline {
   
     stage('Run tests') {
       steps {
-        sh "docker run testapp npm test 1"
+        sh "docker run testapp npm test time=5"
       }
     }
    stage('Deploy Image') {
