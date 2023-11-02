@@ -15,7 +15,15 @@ pipeline {
         sh "docker run testapp npm test"
       }
     
-
+   }
+   stages {
+   stage('Building image') {
+      steps{
+          sh '''
+          docker build -t testapp .
+             '''  
+        }
+    }
     stage('Pass To K8s'){
         steps {
         sh '''
